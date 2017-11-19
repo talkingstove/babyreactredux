@@ -7,10 +7,10 @@ function reducer(state, action) {
   }
   
   switch (action.type) {
-    case 'yourAction':
+    case 'updateExampleStateVar':
 
       return Object.assign({}, state, {
-        stateValue: 'yourNewValue'
+        exampleStateVar: action.payload.newVal
       })
       
     default:
@@ -21,7 +21,7 @@ function reducer(state, action) {
 
 
 const defaultState = {
-  stateValue: 'initalValue'
+  exampleStateVar: 'Inital Value'
 };
 
 export const appStore = createStore(reducer, defaultState);
