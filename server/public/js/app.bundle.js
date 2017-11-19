@@ -11132,7 +11132,7 @@ function verifyPlainObject(value, displayName, methodName) {
 "use strict";
 
 
-var _reducer = __webpack_require__(98);
+var _store = __webpack_require__(98);
 
 var _reactDom = __webpack_require__(114);
 
@@ -11152,7 +11152,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 _reactDom2.default.render(_react2.default.createElement(
   _reactRedux.Provider,
-  { store: _reducer.appStore },
+  { store: _store.appStore },
   _react2.default.createElement(_SampleApp2.default, null)
 ), document.getElementById('app'));
 
