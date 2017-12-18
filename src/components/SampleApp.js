@@ -19,15 +19,15 @@ class SampleApp extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     exampleStateVar: state.exampleStateVar
   }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    updateExampleStateVar : (newVal) => dispatch({
+    updateExampleStateVar: (newVal) => dispatch({
       type : 'updateExampleStateVar',
       payload: {
         newVal: newVal

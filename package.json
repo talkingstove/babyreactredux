@@ -4,10 +4,11 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node js-build.js",
+    "build-css": "node css-only-build.js"
   },
   "author": "Ryan Moore",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.4",
     "create-react-class": "^15.6.2",
@@ -27,6 +28,9 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "node-sass": "^4.7.2",
+    "shelljs": "^0.7.8",
+    "whatwg-fetch": "^2.0.3"
   }
 }
