@@ -5,7 +5,7 @@ This will get you started on React and Redux without having to sift through a mi
 
 To get started, run `npm install`
 
-To make changes, edit files in src folder, then run `sh local-build.sh`
+To make changes, edit files in src folder, then run `npm run build` (This should work cross-platform, but hasn't actually been tested on Windows yet)
 
 To run server, cd to server folder and run `node index.js`. Site will be available on http://localhost:3001/
 
