@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-     entry: './src/app.jsx',
+     entry: ['babel-polyfill', 'whatwg-fetch', './app.jsx'],
      devtool: 'true',
      output: {
       filename: 'app.bundle.js'
@@ -13,7 +13,7 @@ module.exports = {
             exclude:/(node_modules|bower_components)/,
             loader :'babel-loader',
             query  :{
-              presets:['es2015', 'react'],
+              presets:['babel-polyfill', 'es2015-loose', 'react'],
               plugins: ["transform-decorators-legacy"]
             }
           }
